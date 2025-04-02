@@ -1,0 +1,196 @@
+#root {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+header p {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+} */
+
+.todo-container {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  background-color: #f8f9fa;
+  min-height: 300px;
+}
+
+.tab-navigation {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-bottom: 1px solid #e9ecef;
+  background-color: #fff;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.tab-navigation button {
+  padding: 0.6rem 1.2rem;
+  background-color: transparent;
+  border: 1px solid #e9ecef;
+  border-radius: 20px;
+  color: #495057;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.tab-navigation button:hover {
+  background-color: #f8f9fa;
+  border-color: #ced4da;
+}
+
+.tab-navigation button.active-tab {
+  background-color: #4361ee;
+  color: white;
+  border-color: #4361ee;
+}
+
+.sidebar {
+  display: none;
+}
+
+/* Responsive styles */
+@media (min-width: 1200px) {
+  .todo-app {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 992px) {
+  .todo-app {
+    max-width: 700px;
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .todo-app {
+    max-width: 100%;
+    padding: 0.75rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .todo-content {
+    flex-direction: column;
+  }
+
+  .tab-navigation {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0.75rem;
+  }
+
+  .tab-navigation button {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #root {
+    padding: 0.5rem;
+  }
+
+  .todo-app {
+    padding: 0.5rem;
+  }
+
+  header {
+    margin-bottom: 1.25rem;
+  }
+
+  header h1 {
+    font-size: 1.75rem;
+  }
+
+  .tab-navigation {
+    padding: 0.5rem;
+  }
+}
